@@ -1,0 +1,237 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>WISH007</title><style>*{box-sizing:border-box}html,body{margin:0;background:#050505;color:#eee5d5;font-family:Georgia,serif}body{overflow:hidden}.screen{display:none;position:absolute;inset:0;overflow:auto;padding:22px 18px 70px;opacity:0;transform:translateY(14px);transition:.7s}.screen.active{display:block;opacity:1;transform:none}.story{min-height:calc(100vh - 90px);max-width:800px;margin:auto;display:flex;flex-direction:column;justify-content:center}.eyebrow{font:10px Arial;letter-spacing:.25em;color:#888}.story h1{font-size:clamp(34px,9vw,68px);font-weight:400;margin:10px 0 22px}.story p{font-size:clamp(15px,4vw,19px);line-height:1.9;color:#d8d0c5;white-space:pre-line}.btn{border:1px solid #555;background:#111;color:#eee;padding:12px 18px;border-radius:999px;font:13px Arial;cursor:pointer}.next{text-align:center;margin-top:20px}.warm{background:radial-gradient(circle at 50% 20%,#241b12,#050505 65%)}.green{background:radial-gradient(circle at 50% 20%,#11241b,#050505 65%)}.soft{background:radial-gradient(circle at 50% 20%,#181817,#050505 65%)}.big{text-align:center;font-size:clamp(48px,14vw,110px);margin:25px 0}.art{max-width:410px;width:90%;margin:15px auto}.art path,.art circle,.art ellipse{fill:none;stroke:#ddd3c2;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:800;stroke-dashoffset:800;animation:draw 2.3s ease forwards}@keyframes draw{to{stroke-dashoffset:0}}.photo{display:block;width:min(430px,95%);max-height:68vh;object-fit:cover;margin:20px auto;border-radius:6px;box-shadow:0 20px 80px #000}.video{display:block;width:min(520px,100%);max-height:65vh;margin:20px auto;border-radius:6px}.dialog{max-width:520px;margin:20px auto;font:14px Arial}.bubble{padding:10px 13px;margin:9px 0;border-radius:14px;max-width:85%;background:#292929}.me{margin-left:auto;background:#294b3b}.chat{max-width:520px;margin:auto;min-height:100%;display:flex;justify-content:center;flex-direction:column}.chatbox{background:#111;border:1px solid #292929;border-radius:22px;padding:18px}.head{font:14px Arial;border-bottom:1px solid #292929;padding-bottom:14px}.msg{font:14px Arial;padding:10px 12px;border-radius:14px;margin:9px 0;max-width:86%;animation:pop .35s}.she{background:#282828}.mine{margin-left:auto;background:#294b3b}@keyframes pop{from{opacity:0;transform:scale(.97)}to{opacity:1;transform:none}}.typing{font:12px Arial;color:#777}.clue{text-align:center;font:13px Arial;line-height:1.8;margin:18px}.input{display:flex;gap:8px}.input input{flex:1;background:#090909;border:1px solid #333;border-radius:12px;padding:12px;color:#fff}.result{text-align:center;font:12px Arial;margin:10px;color:#ccc}.credits{max-width:650px;margin:auto;text-align:center}.credit{min-height:85vh;display:flex;flex-direction:column;justify-content:center;align-items:center}.credit h2{font-size:clamp(27px,7vw,48px);font-weight:400}.credit p{max-width:520px;line-height:1.8;color:#aaa;white-space:pre-line}.credit img{width:min(360px,90%);max-height:55vh;object-fit:contain}.ticket{width:min(260px,75%)!important;transform:rotate(-2deg)}.grain{position:fixed;inset:0;pointer-events:none;opacity:.06;z-index:50;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.8' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}.draw-scene{width:min(520px,96%);margin:8px auto 18px;filter:drop-shadow(0 16px 45px rgba(0,0,0,.45))}.draw-scene path,.draw-scene circle,.draw-scene ellipse,.draw-scene rect,.draw-scene line,.draw-scene polyline,.draw-scene polygon{fill:none;stroke:#d9cfbd;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;opacity:.94}.draw-scene .soft{stroke-width:1.1;opacity:.55}.draw-scene .shade{stroke-width:1;opacity:.35}.draw-scene .drawn{stroke-dasharray:1200;stroke-dashoffset:1200;animation:sketchIn 2.8s cubic-bezier(.2,.7,.2,1) forwards}.draw-scene .drawn:nth-child(2){animation-delay:.12s}.draw-scene .drawn:nth-child(3){animation-delay:.24s}.draw-scene .drawn:nth-child(4){animation-delay:.36s}.draw-scene .drawn:nth-child(5){animation-delay:.48s}.draw-scene .drawn:nth-child(6){animation-delay:.60s}.draw-scene .drawn:nth-child(7){animation-delay:.72s}@keyframes sketchIn{to{stroke-dashoffset:0}}.photo{animation:photoIn 1.2s ease both}@keyframes photoIn{from{opacity:0;transform:translateY(18px) scale(.985);filter:blur(3px)}to{opacity:1;transform:none;filter:none}}.photo-caption{font:11px Arial;letter-spacing:.14em;text-transform:uppercase;color:#aaa;text-align:center;margin:-4px auto 20px}.chatbox{box-shadow:0 30px 100px rgba(0,0,0,.35)}.msg{animation:msgIn .55s cubic-bezier(.2,.8,.2,1)}@keyframes msgIn{from{opacity:0;transform:translateY(10px) scale(.96)}to{opacity:1;transform:none}}.typing{padding:4px 12px;opacity:.7}.story h1{letter-spacing:.01em}.cinema-note{font:10px Arial;letter-spacing:.2em;text-transform:uppercase;color:#777;text-align:center;margin-top:10px}.reveal-list{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin:18px auto}.reveal-pill{border:1px solid #45433e;border-radius:999px;padding:8px 10px;font:10px Arial;color:#c9c0b3;opacity:0;animation:pillIn .6s ease forwards}.reveal-pill:nth-child(1){animation-delay:.25s}.reveal-pill:nth-child(2){animation-delay:.5s}.reveal-pill:nth-child(3){animation-delay:.75s}.reveal-pill:nth-child(4){animation-delay:1s}.reveal-pill:nth-child(5){animation-delay:1.25s}.reveal-pill:nth-child(6){animation-delay:1.5s}@keyframes pillIn{to{opacity:1;transform:none}}.puli-row{display:flex;gap:7px;justify-content:center;flex-wrap:wrap;max-width:330px;margin:22px auto}.puli{width:24px;height:42px;border:1px solid #b9a98f;border-radius:5px;opacity:0;transform:translateY(16px) rotate(-3deg);animation:puliIn .55s ease forwards;background:linear-gradient(90deg,rgba(220,190,130,.08),rgba(255,255,255,.03))}.puli:nth-child(1){animation-delay:.05s}.puli:nth-child(2){animation-delay:.1s}.puli:nth-child(3){animation-delay:.15s}.puli:nth-child(4){animation-delay:.2s}.puli:nth-child(5){animation-delay:.25s}.puli:nth-child(6){animation-delay:.3s}.puli:nth-child(7){animation-delay:.35s}.puli:nth-child(8){animation-delay:.4s}.puli:nth-child(9){animation-delay:.45s}.puli:nth-child(10){animation-delay:.5s}@keyframes puliIn{to{opacity:1;transform:none}}</style></head><body><div id="app"><section class="screen "><div class="chat"><div class="chatbox"><div class="head">Dhanieeee · online</div><div id="msgs"></div><div id="unlock" style="display:none"><div class="clue">10 letters<br>First letter: Capital<br>m &amp; e visible</div><div class="input"><input id="pw" placeholder="Enter the name"><button class="btn" onclick="check()">Open</button></div><div id="res" class="result"></div></div></div></div></section><section class="screen warm"><div class="story"><div class="eyebrow">WISH007</div><h1>FIRST MEETING · THE CAR</h1><svg class="draw-scene" viewBox="0 0 600 360"><path class="drawn" d="M95 245l35-75q20-42 88-42h172q65 2 100 49l27 68v34H95z"/><circle class="drawn" cx="174" cy="279" r="29"/><circle class="drawn" cx="449" cy="279" r="29"/><path class="drawn" d="M318 129v103M395 129v102"/><path class="drawn" d="M396 130q72 18 91 69"/><path class="drawn" d="M395 130l52-22"/><path class="drawn" d="M74 291h28m405 0h30"/><circle class="drawn" cx="48" cy="238" r="17"/><path class="drawn" d="M48 255v52m0-37l-23 24m23-24l22 21m-11-10h34"/><path class="soft" d="M520 90q18 30 5 58m18-78q26 34 10 76"/></svg><p>It wasn't planned.
+I was going to the function on my bike.
+There was a car in front of me… but I had no idea where it was going.
+I wasn't following it. We just happened to be going the same way.
+Then suddenly… the car stopped.
+I was right behind it, thinking whether to honk.
+The back door opened.
+And there you were.
+Red dress. Jimki.
+I recognized you immediately.
+I smiled from the bike.
+You didn't notice me then.</p><div class="next"><button class="btn" onclick="next()">CONTINUE</button></div></div></section><section class="screen "><div class="story"><div class="eyebrow">WISH007</div><h1>FIRST MEETING · INSIDE</h1><svg class="draw-scene" viewBox="0 0 600 360"><path class="drawn" d="M95 245l35-75q20-42 88-42h172q65 2 100 49l27 68v34H95z"/><circle class="drawn" cx="174" cy="279" r="29"/><circle class="drawn" cx="449" cy="279" r="29"/><path class="drawn" d="M318 129v103M395 129v102"/><path class="drawn" d="M396 130q72 18 91 69"/><path class="drawn" d="M395 130l52-22"/><path class="drawn" d="M74 291h28m405 0h30"/><circle class="drawn" cx="48" cy="238" r="17"/><path class="drawn" d="M48 255v52m0-37l-23 24m23-24l22 21m-11-10h34"/><path class="soft" d="M520 90q18 30 5 58m18-78q26 34 10 76"/></svg><p>I parked the bike and went inside.
+Nothing dramatic happened next.
+We didn't immediately start talking.
+It was just a normal family function.</p><div class="next"><button class="btn" onclick="next()">CONTINUE</button></div></div></section><section class="screen warm"><div class="story"><div class="eyebrow">WISH007</div><h1>FIRST MEETING · FOOD PASS</h1><svg class="draw-scene" viewBox="0 0 600 360"><path class="drawn" d="M95 245l35-75q20-42 88-42h172q65 2 100 49l27 68v34H95z"/><circle class="drawn" cx="174" cy="279" r="29"/><circle class="drawn" cx="449" cy="279" r="29"/><path class="drawn" d="M318 129v103M395 129v102"/><path class="drawn" d="M396 130q72 18 91 69"/><path class="drawn" d="M395 130l52-22"/><path class="drawn" d="M74 291h28m405 0h30"/><circle class="drawn" cx="48" cy="238" r="17"/><path class="drawn" d="M48 255v52m0-37l-23 24m23-24l22 21m-11-10h34"/><path class="soft" d="M520 90q18 30 5 58m18-78q26 34 10 76"/></svg><p>After the function, food was being served.
+Ada, puttu, pathiri, kadala, chicken curry… and of course, pappadam.
+The plates moved from person to person.
+You were standing there watching.
+Then I said…</p><div class="dialog"><div class="bubble me">Veruthe nokki nikkathe vannu pani edukkadee.</div></div><div class="next"><button class="btn" onclick="next()">CONTINUE</button></div></div></section><section class="screen warm"><div class="story"><div class="eyebrow">WISH007</div><h1>FIRST MEETING · TOGETHER</h1><svg class="draw-scene" viewBox="0 0 600 430"><path class="drawn" d="M95 350V125l205-82 205 82v225"/><path class="drawn" d="M235 350V215h130v135"/><circle class="drawn" cx="170" cy="218" r="24"/><path class="drawn" d="M145 247q25 35 50 0m-25 0v63"/><circle class="drawn" cx="425" cy="218" r="24"/><path class="drawn" d="M400 247q25 35 50 0m-25 0v63"/><path class="soft" d="M95 350h410M130 145h70m220 0h70"/></svg><p>Then I called you too.
+And somehow…
+we ended up working together.
+Nothing dramatic.
+Nothing planned.
+We were just… happy doing it together.</p><div class="next"><button class="btn" onclick="next()">CONTINUE</button></div></div></section><section class="screen warm"><div class="story"><div class="eyebrow">WISH007</div><h1>FIRST MEETING · ONE TABLE</h1><svg class="draw-scene" viewBox="0 0 650 390"><ellipse class="drawn" cx="120" cy="275" rx="65" ry="28"/><ellipse class="drawn" cx="325" cy="275" rx="65" ry="28"/><ellipse class="drawn" cx="530" cy="275" rx="65" ry="28"/><path class="drawn" d="M85 275q0-110 35-110t35 110m-35-110v-62"/><path class="drawn" d="M290 275q0-110 35-110t35 110m-35-110v-62"/><path class="drawn" d="M495 275q0-110 35-110t35 110m-35-110v-62"/><circle class="drawn" cx="120" cy="88" r="24"/><circle class="drawn" cx="325" cy="88" r="24"/><circle class="drawn" cx="530" cy="88" r="24"/><path class="drawn" d="M144 98l110 82m96-82l110 82"/><ellipse class="soft" cx="325" cy="330" rx="185" ry="25"/></svg><p>You were barely eating.
+“Entha ithra kurach kazhikkunne?”
+“Ente kunju vayaru.” 😂
+“Lachimi ithilum kooduthal kayikumalooo.” 😂
+Then the teasing started.
+Just one of those comfortable family moments.</p><div class="next"><button class="btn" onclick="next()">CONTINUE</button></div></div></section><section class="screen "><div class="story"><div class="eyebrow">WISH007</div><h1>FIRST MEETING · YOUR NAME</h1><div class="big">DHANISHA</div><p>I suddenly realized…
+I had forgotten your name. 😭
+She remembered my name and Akash's.
+“Dhanisha.”
+“Ohh Dhanisha aanalle… variety name aanallo.”</p><div class="next"><button class="btn" onclick="next()">CONTINUE</button></div></div></section><section class="screen "><div class="story"><div class="eyebrow">WISH007</div><h1>FIRST MEETING · INSTAGRAM</h1><div class="dialog"><div class="bubble she">Njan veettil chennittu follow cheyyam.</div></div><p>Later, you asked about my Instagram.
+The old account was gone.
+I had another one, but I had stopped using Instagram for a while.
+You told me to follow you.
+Your phone wasn't even with you that day — it was at home charging.
+“Njan veettil chennittu follow cheyyam.”
+And that little conversation became important later.</p><div class="next"><button class="btn" onclick="next()">CONTINUE</button></div></div></section><section class="screen "><div class="story"><div class="eyebrow">WISH007</div><h1>FIRST MEETING · GOODBYE</h1><svg class="draw-scene" viewBox="0 0 650 430"><ellipse class="drawn" cx="325" cy="255" rx="190" ry="72"/><ellipse class="drawn" cx="325" cy="255" rx="80" ry="25"/><g><circle class="drawn" cx="325" cy="82" r="24"/><path class="drawn" d="M302 110q23 35 46 0m-23 0v60"/></g><g><circle class="drawn" cx="185" cy="150" r="22"/><path class="drawn" d="M164 177q21 30 42 0m-21 0v58"/></g><g><circle class="drawn" cx="465" cy="150" r="22"/><path class="drawn" d="M444 177q21 30 42 0m-21 0v58"/></g><g><circle class="drawn" cx="205" cy="350" r="22"/><path class="drawn" d="M184 377q21 30 42 0m-21 0v35"/></g><g><circle class="drawn" cx="445" cy="350" r="22"/><path class="drawn" d="M424 377q21 30 42 0m-21 0v35"/></g><path class="soft" d="M110 255h-50m480 0h50"/></svg><p>You teased me.
+I teased you.
+Then you playfully hit me on the stomach. 😂
+Before leaving:
+“Msg ayakkamto…”
+Instagram.
+That was enough.</p><div class="next"><button class="btn" onclick="next()">CONTINUE</button></div></div></section><section class="screen "><div class="story"><div class="eyebrow">WISH007</div><h1>FIRST MEETING · THAT NIGHT</h1><div class="big">FIRST<br>MEETING</div><p>Maybe it was just a normal day.
+I didn't know it was the beginning of something.</p><div class="next"><button class="btn" onclick="next()">CONTINUE</button></div></div></section><section class="screen soft"><div class="story"><div class="eyebrow">WISH007</div><h1>CHAPTER TWO · ONLINE DAYS</h1><svg class="draw-scene" viewBox="0 0 600 430"><rect class="drawn" x="190" y="45" width="220" height="330" rx="28"/><circle class="drawn" cx="300" cy="90" r="7"/><rect class="drawn" x="220" y="125" width="105" height="38" rx="18"/><rect class="drawn" x="275" y="180" width="105" height="38" rx="18"/><rect class="drawn" x="220" y="235" width="125" height="38" rx="18"/><path class="soft" d="M250 320h100"/><circle class="drawn" cx="120" cy="155" r="25"/><path class="drawn" d="M95 185q25 30 50 0m-25 0v60"/><path class="drawn" d="M145 180l50-25m-50 45l45 20"/></svg><p>After that first meeting…
+we didn't meet much in person.
+Most of what came next happened through messages.
+Small conversations.
+Random talks.
+Slowly getting comfortable.
+I was into workouts, health and staying active.
+And I kept telling you to be productive too. 😂
+Then I started sending you photos and asking you to draw something on them.
+And you actually did.
+For two days. 😂
+I was genuinely so happy seeing them.
+Then…
+“Ini njan varakkilla.”
+“Ini onnum cheyyilla.” 😂
+And just like that…
+my little productive project was cancelled. 😭
+But those tiny things were slowly becoming memories.</p><div class="next"><button class="btn" onclick="next()">CONTINUE</button></div></div></section><section class="screen "><div class="story"><div class="eyebrow">WISH007</div><h1>CHAPTER THREE · THE CHANGE</h1><div class="big">LIGHT</div><p>There was a time when I had stepped away from almost everything.
+Instagram.
+WhatsApp.
+Being online.
+Sometimes I'd stay offline for a day or two.
+I was spending a lot of time alone.
+Thinking.
+Overthinking.
+And then… somehow…
+I started coming back online.
+Instagram first.
+Mostly because I wanted to message you.
+Then WhatsApp slowly became active too.
+Not suddenly.
+Not all at once.
+Just slowly.
+A little light came in.
+Sometimes a person doesn't change your whole life.
+Sometimes…
+they just make it feel a little less dark.</p><div class="next"><button class="btn" onclick="next()">CONTINUE</button></div></div></section><section class="screen soft"><div class="story"><div class="eyebrow">WISH007</div><h1>CHAPTER FOUR · THE 16-YEAR-OLD LIE 😂</h1><div class="big">CASE<br>CLOSED</div><p>Okay… now comes the investigation. 🕵️😂
+During one of our Instagram chats, I casually asked you:
+“Ethra vayassayi?”
+And you simply said… “16.” 😌
+Then you asked mine.
+“21.”
+“Okay.” 😂
+Later, you mentioned your chechi — the relative I already knew — and said that you two were the same age.
+Then, about two days later:
+“Ninakku 16 vayassalle?”
+“Ninakku 16 vayassu thanne alle?”
+And you were still confidently going with it. 😌😂
+Then the math started.
+You had already completed your degree and were waiting for two improvement exams.
+Akash was already 17+ / nearing 18.
+One thing after another… the story started contradicting itself.
+Finally:
+“Sheriya, enikku 16 vayassalla… enikku 20 vayassaanu.”
+CASE CLOSED 😂</p><div class="next"><button class="btn" onclick="next()">CONTINUE</button></div></div></section><section class="screen soft"><div class="story"><div class="eyebrow">WISH007</div><h1>CHAPTER FIVE · UNDAKANNY & VAALMAKRI</h1><div class="big">VAALMAKRI</div><p>One random 👀 emoji…
+somehow became a nickname.
+
+And your nickname for me?
+
+MANGANDIYEEE
+
+During my long-hair phase…</p><div class="next"><button class="btn" onclick="next()">CONTINUE</button></div></div></section><section class="screen soft"><div class="story"><div class="eyebrow">WISH007</div><h1>CHAPTER FIVE · SAME VIBE</h1><div class="big" style="font-size:40px">UNDERSTANDING · LOVE · CARE · FAMILY</div><p>Somewhere along the way, we started talking about the future too.
+What kind of person each of us wanted.
+What matters.
+What doesn't.
+And somehow…
+the answers sounded surprisingly similar.
+Understanding.
+Love.
+Care.
+Family.
+Different words maybe.
+But somehow… the same vibe.</p><div class="next"><button class="btn" onclick="next()">CONTINUE</button></div></div></section><section class="screen warm"><div class="story"><div class="eyebrow">WISH007</div><h1>CHAPTER FIVE · FOOD & CARE</h1><svg class="draw-scene" viewBox="0 0 520 360"><circle class="drawn" cx="260" cy="85" r="32"/><path class="drawn" d="M230 120q30 40 60 0m-30 0v90m-30-50l-55 65m115-65l55 65m-85-15l-12 95m42-95l12 95"/><path class="soft" d="M120 315h280"/></svg><p>And yes…
+I still had one very important responsibility. 😂
+Making sure you eat properly.
+Sometimes you didn't eat enough.
+Sometimes you didn't eat on time.
+And I'd irritate you about it.
+Not because I wanted to annoy you.
+Just because…
+I cared.</p><div class="next"><button class="btn" onclick="next()">CONTINUE</button></div></div></section><section class="screen soft"><div class="story"><div class="eyebrow">WISH007</div><h1>CHAPTER SIX · FIVE SONGS 🫂🎶</h1><div class="big">FIVE</div><p>There was one day…
+songs became more than just songs.
+A call.
+A guessing-game kind of moment.
+Then another day…
+you sang for me.
+Not one song.
+Not two.
+FIVE.
+Hearing you sing in your own voice…
+that was something else.
+I'll remember that one. 🫂</p><div class="next"><button class="btn" onclick="next()">CONTINUE</button></div></div></section><section class="screen "><div class="story"><div class="eyebrow">WISH007</div><h1>CHAPTER SEVEN · THE IGNORE</h1><div class="dialog"><div class="bubble she">🎙️ WhatsApp voice message</div></div><p>I was under work pressure.
+While I was messaging, you were watching reels.
+I felt bad.
+“nee reels noki irunno njan povaan”
+So I went offline.
+Then came:
+“pokko”
+“aarum aareyum pidich nirthanilla”
+“povandavark pokaam”
+The next day, we both realized it had hurt.
+Then you sent that WhatsApp voice message.
+“...enik bad aayi, entho enik sankadam aayi, kanneen vellam vannu...”
+We talked it out.
+Apologized.
+There were many voice messages and calls.
+A few days later, after I came home from Kottayam, you told me you were coming to town for admission to study to become a teacher.</p><div class="next"><button class="btn" onclick="next()">CONTINUE</button></div></div></section><section class="screen green"><div class="story"><div class="eyebrow">WISH007</div><h1>CHAPTER EIGHT · 07 JULY 2026 · SECOND MEETING</h1><svg class="draw-scene" viewBox="0 0 600 380"><rect class="drawn" x="190" y="45" width="220" height="290" rx="26"/><path class="drawn" d="M230 165h140m-140 55h110m-110 55h75"/><path class="drawn" d="M100 280q35-100 70 0t70 0t70 0t70 0t70 0"/><circle class="drawn" cx="100" cy="280" r="9"/><circle class="drawn" cx="240" cy="280" r="9"/><circle class="drawn" cx="380" cy="280" r="9"/><circle class="drawn" cx="500" cy="280" r="9"/></svg><p>You unexpectedly asked if I was coming to town.
+You were going for admission.
+I immediately got ready — even without eating — and rode my bike to meet you.
+On the way, I bought pulimittayi because you had once said you liked it.
+Then I found out your friend would be there, so I got two Munch bars.
+We met at Vadakkunnathan Temple ground.
+There were six of us.
+I was shy at first, but somehow I felt comfortable.
+Then we talked, joked, ate, said bye…
+and separated.
+Two or three minutes later…
+we unexpectedly met again.</p><div class="next"><button class="btn" onclick="next()">CONTINUE</button></div></div></section><section class="screen green"><div class="story"><div class="eyebrow">WISH007</div><h1>HER THAT DAY 💚 · THE DETAILS</h1><svg class="draw-scene" viewBox="0 0 650 430"><path class="drawn" d="M80 340q30-70 90-70h80q55 0 85 70"/><circle class="drawn" cx="120" cy="225" r="24"/><circle class="drawn" cx="205" cy="205" r="24"/><circle class="drawn" cx="300" cy="220" r="24"/><circle class="drawn" cx="395" cy="205" r="24"/><circle class="drawn" cx="490" cy="225" r="24"/><circle class="drawn" cx="575" cy="205" r="24"/><path class="drawn" d="M130 250v60m75-85v85m95-55v55m95-80v80m95-55v55m85-85v85"/><path class="drawn" d="M170 335l45-65 55 65m160 0l-45-65-55 65"/><path class="soft" d="M300 70v80m-30-50h60"/></svg><p>And somehow, I noticed all those little details again.
+Maybe because I was actually paying attention.</p><div class="reveal-list"><span class="reveal-pill">GREEN DRESS</span><span class="reveal-pill">JIMKI</span><span class="reveal-pill">BLACK DOT POTTU</span><span class="reveal-pill">SHORT KURI</span><span class="reveal-pill">FLOWING HAIR</span><span class="reveal-pill">SILVER WATCH</span></div><div class="cinema-note">one detail at a time · then the whole picture</div><div class="next"><button class="btn" onclick="next()">CONTINUE</button></div></div></section><section class="screen green"><div class="story"><div class="eyebrow">WISH007</div><h1>CHAPTER EIGHT · PULIMITTAYI</h1><div class="big">10</div><div class="puli-row"><span class="puli"></span><span class="puli"></span><span class="puli"></span><span class="puli"></span><span class="puli"></span><span class="puli"></span><span class="puli"></span><span class="puli"></span><span class="puli"></span><span class="puli"></span></div><div style="text-align:center">PULIMITTAYI · ALL TOGETHER</div><p>You first got the Munch.
+Then:
+“Oru saadhanam ninakk vendi konduvannittund.”
+I reached into my pocket…
+and took them all out together.
+Ten little packets.
+Because you had once told me you liked them.
+I remembered.
+One small thing.
+But it felt special.</p><div class="next"><button class="btn" onclick="next()">CONTINUE</button></div></div></section><section class="screen green"><div class="story"><div class="eyebrow">WISH007</div><h1>CHAPTER EIGHT · 11 JULY 2026 · THE DRAWING</h1><img class="photo" src="second_meeting_drawing.jpg"><p>Two days later, during a call…
+you sent me a little drawing.
+Something from that day.
+You had remembered it.
+And turned it into something of your own.
+Another tiny memory.</p><div class="next"><button class="btn" onclick="next()">CONTINUE</button></div></div></section><section class="screen soft"><div class="story"><div class="eyebrow">WISH007</div><h1>CHAPTER NINE · LITTLE THINGS</h1><img class="photo" src="whitedress.jpg"><div class="photo-caption">one of my all-time favourites 🤍</div><p>Some pictures just make you stop for a second. 🤍
+And yeah…
+I really like you in saree. 😌</p><div class="next"><button class="btn" onclick="next()">CONTINUE</button></div></div></section><section class="screen soft"><div class="story"><div class="eyebrow">WISH007</div><h1>CHAPTER NINE · THAT SAREE MOMENT</h1><img class="photo" src="saree1.jpg"><div class="photo-caption">saree1 · one of my favourites</div><p>Some pictures just stay with you.
+And this one…
+yeah. 😌</p><div class="next"><button class="btn" onclick="next()">CONTINUE</button></div></div></section><section class="screen soft"><div class="story"><div class="eyebrow">WISH007</div><h1>CHAPTER NINE · THE CRUSH MOMENT</h1><video class="video" src="crushmom.mp4" controls playsinline muted></video><p>You sent me this video…
+And honestly?
+Enik ninne onnude crush adichu. 😌
+I even told you that. 😂</p><div class="next"><button class="btn" onclick="next()">CONTINUE</button></div></div></section><section class="screen "><div class="story"><div class="eyebrow">WISH007</div><h1>THE UNEXPECTED PART ❤️</h1><div class="big" style="font-size:42px">I’M REALLY GLAD<br>YOU HAPPENED.</div><p>I never really planned for you to become such an important part of my life.
+You just happened.
+Somewhere between all the conversations, the little fights, the silly moments, the laughs, and everything in between…
+we became us.
+And honestly…
+I don't feel like letting that bond go.
+You're one of those unexpected things life brought to me.
+Something I never went looking for…
+but somehow became one of my favourite parts of it.
+You made me understand little things about love, care, giving, and simply being there for someone.
+Not through big words.
+Just through the little things.
+I don't know exactly what the future holds.
+But I know one thing…</p><div class="next"><button class="btn" onclick="next()">CONTINUE</button></div></div></section><section class="screen "><div class="story"><div class="eyebrow">WISH007</div><h1>FOR YOU · BE HAPPY. BE SAFE. 🌼</h1><div style="text-align:center;line-height:1.8;color:#aaa">And one small sorry… for being a little late with this. 🫂<br><br>I started putting this together on <b>9 September</b>, and somehow it took until <b>16 September</b> to finally bring everything together.<br><br>It may be late… but every bit of it was made with you in mind. ❤️</div><p>After everything I wanted to tell you…
+there's just one thing I want for you.
+
+Be happy.
+Be safe. 🌼🦋🫂✨
+
+I know you can't be happy all the time.
+Life won't always be easy, and some days will feel heavier than others.
+
+But whenever you can…
+try to choose happiness.
+Try to smile.
+Keep going.
+
+And whenever you feel like you can't handle something alone—
+feel free.
+
+I'm always here for you.
+
+I love what you are.
+So don't ever feel like you have to become someone else to be enough.
+
+Keep going, my love.
+Everything will be fine. ❤️
+
+Happy Birthday, Dhanieeee. 🎂🌼
+
+I'm really glad you happened to me.</p>soft<div class="next"><button class="btn" onclick="next()">CONTINUE</button></div></div></section><section class="screen "><div class="credits"><div class="credit"><div class="eyebrow">END CREDITS</div><h2>THE IDEA 💡</h2><div class="creditDate">09 SEP 2026</div><p>It started with one simple thought…\nWhat if I made something different for her?</p></div>
+<div class="credit"><h2>THE FIRST VERSION</h2><div class="creditDate">09 SEP 2026</div><p>The first little version was ready.\nIt wasn't perfect… but it gave me an idea of what this could become.</p><img src="reddress2.jpg"></div>
+<div class="credit"><h2>MAKE IT SOMETHING MORE</h2><div class="creditDate">10 SEP 2026</div><p>The demo was only the beginning.\nThen I started thinking…\nHow can I make this more personal?\nWhat can make it different?\nWhat little things can make it feel like ours?</p></div>
+<div class="credit"><h2>BUILDING IT, STEP BY STEP</h2><p>WHERE IT ALL STARTED\n\nThe memories needed a story of their own.\nSo I started putting them together, one chapter at a time.\n\nThen came all the little details…</p></div>
+<div class="credit"><h2>THE SOUNDTRACK & THE MEMORIES</h2><div class="creditDate">11 SEP 2026</div><p>It wasn't just about choosing songs.\nEvery moment needed the right feeling.\n\nPhotos, memories, little moments… deciding what belonged inside this story took time too.</p></div>
+<div class="credit"><h2>THE LITTLE SECRET</h2><div class="creditDate">12 SEP 2026</div><p>Even the beginning needed a little mystery. 👀\n\nSo I kept changing the idea until the opening felt like our kind of conversation.</p><img src="reddress1.jpg"></div>
+<div class="credit"><h2>TIME WAS RUNNING OUT</h2><div class="creditDate">11 SEP 2026</div><p>Somewhere along the way, I realized…\nI wasn't going to finish everything before your birthday.\n\nSo I made something simple for the moment.\n\nA small birthday card. Just so I could still give you something on time.</p></div>
+<div class="credit"><h2>AND YOU DIDN'T EVEN KNOW</h2><p>And while I was making it…\nyou were right there on a call with me. 😂\n\nYou had no idea what I was actually working on.</p></div>
+<div class="credit"><h2>STILL WORKING…</h2><div class="creditDate">13 SEP 2026</div><p>This picture is from one of those late nights.\n\nBut honestly… this wasn't just one night.\n\nIt had already been a few days of planning, changing things, trying again, and putting everything together.</p></div>
+<div class="credit"><h2>THE PART THAT MATTERED</h2><p>And through all of this…\n\nI never wanted this to become a reason to ignore you.\n\nMaking this was something I wanted to do for you.\nNot something that meant I had to disappear from you.\n\nThe website was the project.\n\nYou were always the reason behind it.</p></div>
+<div class="credit"><h2>JUST A LITTLE PIECE OF THAT DAY. 🎫</h2><p>I know… it's not really a big thing.\nBut I still kept it.\nMaybe because it belonged to a day I wanted to remember.</p><img class="ticket" src="ticket.jpg"></div>
+<div class="credit"><h2>OKAY… ENOUGH SERIOUS CINEMA. 😂</h2><video class="video" src="bday bmb.mp4" controls playsinline muted></video><p>Yeah… this felt more like us. 😂</p></div>
+<div class="credit" style="min-height:100vh"><p>And that's how this little idea became something I really wanted you to see.</p><div class="big">THE END</div></div></div></section><div class="grain"></div></div><script>const ss=[...document.querySelectorAll(".screen")];let i=0;ss[0].classList.add("active");function next(){if(i<ss.length-1){ss[i++].classList.remove("active");ss[i].classList.add("active");ss[i].scrollTop=0;ss[i].querySelectorAll("video").forEach(v=>{v.currentTime=0;v.play().catch(()=>{})})}}function type(){let a=[["mine","Oii Dhaniiieeeee ✨"],["she","parayuuu"],["mine","Oii Oiiii Dhaniiieeeee.... ✨💫"],["she","Enthada Chekka 👀"],["mine","Ninak enthadee Undakkannieeeee"],["she","Ninak enthadaaa Mangadiyeee"],["mine","Enthadee kuruppe Ninak"],["she","Enthadaaa ___m_____e"]],n=0,b=document.getElementById("msgs");function add(){if(n>=a.length){setTimeout(()=>document.getElementById("unlock").style.display="block",900);return}let t=document.createElement("div");t.className="typing";t.textContent="typing…";b.appendChild(t);let text=a[n][1],typingTime=Math.max(1800,Math.min(4200,520+text.length*95));setTimeout(()=>{t.remove();let x=document.createElement("div");x.className="msg "+a[n][0];x.textContent=text;b.appendChild(x);n++;setTimeout(add,1100)},typingTime)}add()}function check(){let v=document.getElementById("pw").value.trim(),r=document.getElementById("res");if(v==="Valmakriye"){r.textContent="Ambadeee, kand pidich aval Undakanny 😌✨";setTimeout(next,800)}else r.textContent="Nannayindadeee Undakanny 😌 Noki adikadee 👀"}window.addEventListener("load",type)</script></body></html>
