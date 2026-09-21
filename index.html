@@ -157,7 +157,45 @@ const chat=[
  ['me','Enthadee kuruppe Ninak'],
  ['she','Enthadaaa ___m_____e']
 ];
-function startChat(){const box=document.getElementById('messages');let t=450;chat.forEach((m,i)=>{const typing=document.createElement('div');typing.className='typing';typing.textContent='typing…';box.appendChild(typing);timers.push(setTimeout(()=>typing.classList.add('show'),t));t+=650;timers.push(setTimeout(()=>{typing.classList.remove('show');const row=document.createElement('div');row.className='msg '+(m[0]==='me'?'me':'she');row.innerHTML=`<div class="bubble">${esc(m[1])}${m[0]==='me'?'<span class="ticks">✓✓</span>':''}</div>`;box.appendChild(row);box.scrollTop=box.scrollHeight;t+=850},t));});timers.push(setTimeout(()=>document.getElementById('unlock').style.display='block',t+350))}
+function startChat(){
+  const box=document.getElementById('messages');
+  let t=700;
+
+  chat.forEach((m,i)=>{
+    const typing=document.createElement('div');
+    typing.className='typing';
+    typing.textContent='typing…';
+    box.appendChild(typing);
+
+    timers.push(setTimeout(()=>{
+      typing.classList.add('show');
+    },t));
+
+    // Human-like typing time
+    t+=1200;
+
+    timers.push(setTimeout(()=>{
+      typing.classList.remove('show');
+
+      const row=document.createElement('div');
+      row.className='msg '+(m[0]==='me'?'me':'she');
+
+      row.innerHTML=
+        `<div class="bubble">${esc(m[1])}${m[0]==='me'?'<span class="ticks">✓✓</span>':''}</div>`;
+
+      box.appendChild(row);
+      box.scrollTop=box.scrollHeight;
+
+      // Natural pause before next message
+      t+=1800;
+
+    },t));
+  });
+
+  timers.push(setTimeout(()=>{
+    document.getElementById('unlock').style.display='block';
+  },t+500));
+}
 function check(){const v=(document.getElementById('pw').value||'').trim();const r=document.getElementById('result');if(v==='Valmakriye'){r.textContent='Ambadeee, kand pidich aval Undakanny 😌✨';unlocked=true;setTimeout(()=>go(1),700)}else{r.textContent='Nannayindadeee Undakanny 😌 Noki adikadee 👀'}}
 document.getElementById('openBtn').onclick=check;document.getElementById('pw').addEventListener('keydown',e=>{if(e.key==='Enter')check()});startChat();
 </script>
